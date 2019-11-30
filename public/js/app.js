@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (event) => {
             messageTwo.textContent = data.error
         } else {
             console.log(data)
-            messageOne.textContent = data.location + ': ' + data.temp + ' ' + data.summary + ' ' + data.rain
+            messageOne.innerHTML = data.location + '<br>' + data.temp + '<br>' + data.summary + '<br>' + data.rain + '<br>' + data.humidity
         }
     })
 })
